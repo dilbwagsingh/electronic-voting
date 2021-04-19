@@ -1,2 +1,2 @@
-# Electronic-voting
-A simple yet secure online voting app
+# Electronic-Voting
+A simple webapp to carry out online voting securely.
