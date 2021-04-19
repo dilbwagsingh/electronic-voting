@@ -1,6 +1,8 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const nodeRSA = require("node-rsa");
+const { PORT } = require("./config/config");
+const { connectDB } = require("./config/db");
 
 const {
   generateVoterID,
@@ -15,21 +17,9 @@ const {
 const app = express();
 app.use(express.json());
 
-const db = "mongodb://localhost:27017/blindSecureElections";
-const Schema = mongoose.Schema;
-mongoose
-  .connect(db, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useFindAndModify: false,
-  })
-  .then(() => {
-    console.log("------------Connected to MongoDB--------------");
-  })
-  .catch((err) => {
-    console.log(err);
-  });
+connectDB();
 
+const Schema = mongoose.Schema;
 const candidateSchema = new Schema({
   candidateName: String,
   candidateID: String,
@@ -201,5 +191,5 @@ app.get("*", (req, res) => {
 });
 
 app.listen(3001, () => {
-  console.log("App running at http://localhost:3001");
+  console.log(`Server running at http://localhost:${PORT}`);
 });
