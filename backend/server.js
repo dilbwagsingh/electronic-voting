@@ -2,7 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const nodeRSA = require("node-rsa");
 const { PORT } = require("./config/config");
-const { connectDB } = require("./config/db");
+const connectDB = require("./config/db");
 
 const {
   generateVoterID,
