@@ -10,7 +10,7 @@ services:
     networks:
       - mern_app
     volumes:
-      - ./frontend/:/app
+      - ./frontend/:/app:ro
       - /app/node_modules
     depends_on:
       - server
@@ -23,7 +23,7 @@ services:
     networks:
       - mern_app
     volumes:
-      - ./backend/:/app
+      - ./backend/:/app:ro
       - /app/node_modules
     depends_on:
       - mongo
