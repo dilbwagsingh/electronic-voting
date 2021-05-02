@@ -222,5 +222,3 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/vscode,dotenv,react,node,macos,linux,windows
-
-**/package-lock.json
