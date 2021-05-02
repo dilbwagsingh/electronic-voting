@@ -5,8 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js",
-    "dev": "concurrently \"npm start\" \"cd ../frontend && npm start \" "
+    "start": "nodemon server.js"
   },
   "author": "Dilbwag Singh",
   "license": "ISC",
@@ -17,7 +16,6 @@
     "node-rsa": "^1.1.1"
   },
   "devDependencies": {
-    "concurrently": "^6.0.2",
     "dotenv": "^8.2.0",
     "nodemon": "^2.0.7"
   }
