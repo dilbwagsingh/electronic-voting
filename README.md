@@ -54,6 +54,8 @@ docker-compose up
 
 > Note: Docker should be installed in your system for this these commands to work.
 
+You are now ready to make changes to the app. I have also setup hot-reloading for the Docker containers to automatically reflect changes that you make without manually having to rebuild and restart the containers. Happy hacking!!!
+
 ## Contributing Guidelines
 
 Thanks for taking the time to contribute!
