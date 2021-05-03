@@ -40,7 +40,9 @@ You saw this coming didn't you? Well if it wasn't for this, I probably would hav
 
 ## Development environment setup
 
-Well you are in luck this time. This app is **fully dockerized** and setting up you development enviroment is as simple as running the following command from the root directory of the app.
+Well you are in luck this time. This app is **fully dockerized** and setting up you development enviroment is as simple as running a simple command from the root directory of the app.
+
+But before that you will need to create a .env file inside the backend folder. You can take reference from the .env.example file I provided for the exact variables that are to be created.
 
 ```Makefile:
 make run-dev
