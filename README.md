@@ -26,7 +26,7 @@ The ideal protocol has, at the very least, these six requirements-
 
 - Implements most of the above listed requirements except for points 4 & 5
 - Uses **RSA Blind Signatures** algorithm to satisfy requirement numbers 1, 2 & 3
-- Requirement number 6 & 7 are fulfilled by simply displaying the list of registered votetrs with their individual voting statuses
+- Requirement number 6 & 7 are fulfilled by simply displaying the list of registered voters with their individual voting statuses
 
 ## Caveats of the webapp
 
